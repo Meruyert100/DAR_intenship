@@ -129,19 +129,17 @@ class MainViewController: UIViewController {
         vkconnectImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         firstDynamicView.topAnchor.constraint(equalTo: cancelButton.bottomAnchor).isActive = true
-        firstDynamicView.bottomAnchor.constraint(equalTo: logoImageView.topAnchor).isActive = true
         firstDynamicView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.07).isActive = true
         
-        logoImageView.topAnchor.constraint(equalTo: cancelButton.bottomAnchor, constant: 120).isActive = true
+        logoImageView.topAnchor.constraint(equalTo: firstDynamicView.bottomAnchor).isActive = true
         logoImageView.widthAnchor.constraint(equalToConstant: 110).isActive = true
         logoImageView.heightAnchor.constraint(equalToConstant: 110).isActive = true
         logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         secondDynamicView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor).isActive = true
-        secondDynamicView.bottomAnchor.constraint(equalTo: loginTextField.topAnchor).isActive = true
         secondDynamicView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.04).isActive = true
         
-        loginTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 90).isActive = true
+        loginTextField.topAnchor.constraint(equalTo: secondDynamicView.bottomAnchor).isActive = true
         loginTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         loginTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         loginTextField.heightAnchor.constraint(equalToConstant: 44).isActive = true
