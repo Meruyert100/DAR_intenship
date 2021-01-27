@@ -18,7 +18,6 @@ class MainViewController: UIViewController {
     lazy var dynamicView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .red
         return view
     }()
     
