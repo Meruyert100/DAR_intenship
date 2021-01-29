@@ -1,4 +1,4 @@
-# DAR_intenship
+# DAR Winter Internship
 
 🙂HW1
 
