@@ -16,4 +16,9 @@
 😎HW4
 
 - Created news feed of Instagram using UICollectionView and UITableView.
+- Implemented following Instagram functions:
+  1. Like photo by double tapping or by clicking heart button
+  2. View and leave a comment after clicking comment button
+  3. Visual effect of saving photo by touching save button
+  
 
