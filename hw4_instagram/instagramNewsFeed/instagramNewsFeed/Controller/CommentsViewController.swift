@@ -49,6 +49,7 @@ class CommentsViewController: UIViewController {
         rowCount = rowCount + 1
         commentArray.append(textField.text ?? "")
         tableView.reloadData()
+        textField.text = ""
     }
     
 }
@@ -57,10 +58,10 @@ extension CommentsViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return commentArray.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rowCount
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

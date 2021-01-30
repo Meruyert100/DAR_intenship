@@ -147,7 +147,6 @@
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button" image="message" catalog="system"/>
                                                     <connections>
-                                                        <action selector="commentButtonPressed:" destination="HBL-kz-cge" eventType="touchUpInside" id="NhJ-7K-qvU"/>
                                                         <segue destination="MfC-id-8J2" kind="show" id="dht-k0-1b4"/>
                                                     </connections>
                                                 </button>
@@ -306,14 +305,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dickens" translatesAutoresizingMaskIntoConstraints="NO" id="n18-cV-Ht7">
-                                <rect key="frame" x="8" y="96" width="52" height="48"/>
+                                <rect key="frame" x="8" y="96" width="48" height="48"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="U1v-qq-ZZd"/>
                                     <constraint firstAttribute="height" constant="48" id="kcS-E3-7YT"/>
-                                    <constraint firstAttribute="width" constant="52" id="qaf-iC-qGb"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6n-EY-WU3">
-                                <rect key="frame" x="64" y="96" width="312" height="20.5"/>
+                                <rect key="frame" x="60" y="96" width="312" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="Ifi-mE-vcC"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="312" id="qRf-j5-AGA"/>

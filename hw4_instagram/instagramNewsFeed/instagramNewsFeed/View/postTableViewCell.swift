@@ -50,6 +50,24 @@ class postTableViewCell: UITableViewCell {
         captionLabel.text = post.caption
         timeAgoLabel.text = post.timeAgo
         
+        doubleTap()
+        
+    }
+    
+    func doubleTap() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(likeHeart))
+        tap.numberOfTapsRequired = 2
+        self.addGestureRecognizer(tap)
+    }
+    
+    @objc func likeHeart() {
+        if numberOfLikesButton.currentImage == UIImage(systemName: "heart") {
+            numberOfLikesButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+            numberOfLikesLabel.text = "Likes: " + String(post.numberOfLikes! + 1)
+        } else {
+            numberOfLikesButton.setImage(UIImage(systemName: "heart"), for: .normal)
+            numberOfLikesLabel.text = "Likes: " + String(post.numberOfLikes!)
+        }
     }
     
     @IBAction func likeButtonPressed(_ sender: Any) {
@@ -60,10 +78,6 @@ class postTableViewCell: UITableViewCell {
             numberOfLikesButton.setImage(UIImage(systemName: "heart"), for: .normal)
             numberOfLikesLabel.text = "Likes: " + String(post.numberOfLikes!)
         }
-    }
-    
-    @IBAction func commentButtonPressed(_ sender: Any) {
-        
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
