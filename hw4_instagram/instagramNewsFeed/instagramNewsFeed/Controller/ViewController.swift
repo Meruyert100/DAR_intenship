@@ -75,3 +75,14 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
 }
 
+extension ViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        let secondViewController = segue.destination as! CommentsViewController
+
+        secondViewController.image = UIImage(named: "nietzche")!
+        secondViewController.name = "nietzche"
+        secondViewController.text = "Wise words from Will Smith: The only thing that I see that is distinctly different from me is: I'm not afraid to die on a treadmill. I will not be outworked, period. You might have more talent than me, you might be smarter than me, you might be sexier than me. You might be all of those things. You got it on me in nine categories. But if we get on the treadmill together, there's two things. You're getting off first, or I'm going to die. It's really that simple. Love that. I wish that you'll embrace this mindset in everything that you do. Tonight, when you think about 2017, don't set resolutions but set goals. Trust in your abilities to figure things out. No matter how small you start, start something that matters. With enough time, focus, effort, even resources and mentorship, you will develop new skills and achieve your goals."
+        
+    }
+}

@@ -17,6 +17,8 @@
 		136F822B25C3F61B000978C1 /* storyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136F822A25C3F61B000978C1 /* storyCollectionViewCell.swift */; };
 		136F825325C45117000978C1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136F825225C45117000978C1 /* Post.swift */; };
 		136F825725C455EF000978C1 /* postTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136F825625C455EF000978C1 /* postTableViewCell.swift */; };
+		13C9823925C54FCB00F0F05F /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9823825C54FCB00F0F05F /* CommentsViewController.swift */; };
+		13C9823C25C54FEC00F0F05F /* commentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9823B25C54FEC00F0F05F /* commentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		136F822A25C3F61B000978C1 /* storyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCollectionViewCell.swift; sourceTree = "<group>"; };
 		136F825225C45117000978C1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		136F825625C455EF000978C1 /* postTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postTableViewCell.swift; sourceTree = "<group>"; };
+		13C9823825C54FCB00F0F05F /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		13C9823B25C54FEC00F0F05F /* commentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			children = (
 				136F822A25C3F61B000978C1 /* storyCollectionViewCell.swift */,
 				136F825625C455EF000978C1 /* postTableViewCell.swift */,
+				13C9823B25C54FEC00F0F05F /* commentTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				136F820E25C3ED67000978C1 /* ViewController.swift */,
+				13C9823825C54FCB00F0F05F /* CommentsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,7 +183,9 @@
 				136F822325C3ED91000978C1 /* User.swift in Sources */,
 				136F820F25C3ED67000978C1 /* ViewController.swift in Sources */,
 				136F825725C455EF000978C1 /* postTableViewCell.swift in Sources */,
+				13C9823925C54FCB00F0F05F /* CommentsViewController.swift in Sources */,
 				136F825325C45117000978C1 /* Post.swift in Sources */,
+				13C9823C25C54FEC00F0F05F /* commentTableViewCell.swift in Sources */,
 				136F820B25C3ED67000978C1 /* AppDelegate.swift in Sources */,
 				136F820D25C3ED67000978C1 /* SceneDelegate.swift in Sources */,
 			);

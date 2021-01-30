@@ -44,16 +44,35 @@ class postTableViewCell: UITableViewCell {
         postAvatarImageView.layer.masksToBounds = true
         
         postUsernameLabel.text = post.createdBy.username
-        
-        moreButton.layer.borderWidth = 1.0
-        moreButton.layer.cornerRadius = 2.0
-        moreButton.layer.borderColor = moreButton.tintColor.cgColor
-        moreButton.layer.masksToBounds = true
-        
+ 
         self.postImageView.image = post.image
         numberOfLikesLabel.text = "Likes: " + String(post.numberOfLikes ?? 0)
         captionLabel.text = post.caption
         timeAgoLabel.text = post.timeAgo
         
     }
+    
+    @IBAction func likeButtonPressed(_ sender: Any) {
+        if numberOfLikesButton.currentImage == UIImage(systemName: "heart") {
+            numberOfLikesButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+            numberOfLikesLabel.text = "Likes: " + String(post.numberOfLikes! + 1)
+        } else {
+            numberOfLikesButton.setImage(UIImage(systemName: "heart"), for: .normal)
+            numberOfLikesLabel.text = "Likes: " + String(post.numberOfLikes!)
+        }
+    }
+    
+    @IBAction func commentButtonPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        if saveButton.currentImage != UIImage(systemName: "bookmark.fill") {
+            saveButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+        } else {
+            saveButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
+        }
+    }
+    
+    
 }
