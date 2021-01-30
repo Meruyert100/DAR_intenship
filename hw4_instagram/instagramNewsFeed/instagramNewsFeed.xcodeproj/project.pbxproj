@@ -68,14 +68,11 @@
 		136F820925C3ED67000978C1 /* instagramNewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				136F822125C3ED7F000978C1 /* Controller */,
-				136F822025C3ED79000978C1 /* View */,
 				136F821F25C3ED75000978C1 /* Model */,
-				136F820A25C3ED67000978C1 /* AppDelegate.swift */,
-				136F820C25C3ED67000978C1 /* SceneDelegate.swift */,
-				136F821025C3ED67000978C1 /* Main.storyboard */,
-				136F821325C3ED6B000978C1 /* Assets.xcassets */,
-				136F821525C3ED6B000978C1 /* LaunchScreen.storyboard */,
+				136F822025C3ED79000978C1 /* View */,
+				136F822125C3ED7F000978C1 /* Controller */,
+				13DB570525C59C1900C47462 /* Resources */,
+				13DB570625C59C2800C47462 /* More */,
 				136F821825C3ED6B000978C1 /* Info.plist */,
 			);
 			path = instagramNewsFeed;
@@ -93,6 +90,7 @@
 		136F822025C3ED79000978C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				136F821025C3ED67000978C1 /* Main.storyboard */,
 				136F822A25C3F61B000978C1 /* storyCollectionViewCell.swift */,
 				136F825625C455EF000978C1 /* postTableViewCell.swift */,
 				13C9823B25C54FEC00F0F05F /* commentTableViewCell.swift */,
@@ -107,6 +105,24 @@
 				13C9823825C54FCB00F0F05F /* CommentsViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		13DB570525C59C1900C47462 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				136F821325C3ED6B000978C1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		13DB570625C59C2800C47462 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				136F820C25C3ED67000978C1 /* SceneDelegate.swift */,
+				136F820A25C3ED67000978C1 /* AppDelegate.swift */,
+				136F821525C3ED6B000978C1 /* LaunchScreen.storyboard */,
+			);
+			path = More;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
