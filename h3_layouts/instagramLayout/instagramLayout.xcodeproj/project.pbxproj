@@ -49,6 +49,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1348891625C6B74E0091A7C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13A9EC8D25C12F7300E11D34 /* InstagramLogoView.swift */,
+				13A9EC8A25C12ABA00E11D34 /* CancelButtonView.swift */,
+				13A9EC9525C153A900E11D34 /* EnterButtonView.swift */,
+				13A9EC9025C133FF00E11D34 /* CredentialsEnterView.swift */,
+				13A9EC9825C157AC00E11D34 /* BreakingLinesView.swift */,
+				13A9EC9C25C15DD500E11D34 /* EnterByFacebookView.swift */,
+				13A9ECA225C172A100E11D34 /* RegisterButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1348891725C6B7620091A7C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13A9EC7725C124BB00E11D34 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1348891825C6B76D0091A7C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13A9EC7C25C124BD00E11D34 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1348891925C6B7810091A7C1 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				13A9EC7325C124BB00E11D34 /* AppDelegate.swift */,
+				13A9EC7525C124BB00E11D34 /* SceneDelegate.swift */,
+				13A9EC7E25C124BD00E11D34 /* LaunchScreen.storyboard */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		1348891B25C6B97E0091A7C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		13A9EC6725C124BB00E11D34 = {
 			isa = PBXGroup;
 			children = (
@@ -68,18 +115,11 @@
 		13A9EC7225C124BB00E11D34 /* instagramLayout */ = {
 			isa = PBXGroup;
 			children = (
-				13A9EC7325C124BB00E11D34 /* AppDelegate.swift */,
-				13A9EC7525C124BB00E11D34 /* SceneDelegate.swift */,
-				13A9EC7725C124BB00E11D34 /* MainViewController.swift */,
-				13A9EC7C25C124BD00E11D34 /* Assets.xcassets */,
-				13A9EC8D25C12F7300E11D34 /* InstagramLogoView.swift */,
-				13A9EC8A25C12ABA00E11D34 /* CancelButtonView.swift */,
-				13A9EC9525C153A900E11D34 /* EnterButtonView.swift */,
-				13A9EC9025C133FF00E11D34 /* CredentialsEnterView.swift */,
-				13A9EC9825C157AC00E11D34 /* BreakingLinesView.swift */,
-				13A9EC9C25C15DD500E11D34 /* EnterByFacebookView.swift */,
-				13A9ECA225C172A100E11D34 /* RegisterButtonView.swift */,
-				13A9EC7E25C124BD00E11D34 /* LaunchScreen.storyboard */,
+				1348891B25C6B97E0091A7C1 /* Model */,
+				1348891925C6B7810091A7C1 /* More */,
+				1348891825C6B76D0091A7C1 /* Resources */,
+				1348891725C6B7620091A7C1 /* Controller */,
+				1348891625C6B74E0091A7C1 /* Views */,
 				13A9EC8125C124BD00E11D34 /* Info.plist */,
 			);
 			path = instagramLayout;

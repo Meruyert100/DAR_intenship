@@ -130,18 +130,18 @@ class MainViewController: UIViewController {
         longLineBreakView.heightAnchor.constraint(equalToConstant: 0.2).isActive = true
         
         registerButtonView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        registerButtonView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 70).isActive = true
-        registerButtonView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -70).isActive = true
+        registerButtonView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 35).isActive = true
+        registerButtonView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -35).isActive = true
         registerButtonView.heightAnchor.constraint(equalToConstant: 32).isActive = true
     }
     
-//    private func checkCredentials() {
-//        if !credentialsEnterView.loginTextField.hasText || !credentialsEnterView.passwordTextField.hasText {
-//            displayMyAlertMessage()
-//        }
+//    func checkCredentials(_ loginTextField: UITextField, _ passwordField: UITextField) {
+//        loginTextField.resignFirstResponder()
+//        passwordField.resignFirstResponder()
 //
-//        if credentialsEnterView.passwordTextField.text?.count ?? 0 < 8 {
+//        guard let login = loginTextField.text, let password = passwordField.text, !login.isEmpty, !password.isEmpty, password.count >= 8, password.prefix(1).uppercased() == password.prefix(1) else {
 //            displayMyAlertMessage()
+//            return
 //        }
 //
 //    }
